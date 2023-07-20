@@ -2,7 +2,7 @@ package com.example.webApi.service;
 
 
 import com.example.webApi.model.Website;
-import com.example.webApi.repository.WebsiteRepository;
+import com.example.webApi.repository.IWebsiteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
 public class WebsiteService {
 
 
-    private WebsiteRepository websiteRepository;
+    private IWebsiteRepository websiteRepository;
 
     @Autowired
-    public WebsiteService(WebsiteRepository websiteRepository) {
+    public WebsiteService(IWebsiteRepository websiteRepository) {
         this.websiteRepository = websiteRepository;
     }
 

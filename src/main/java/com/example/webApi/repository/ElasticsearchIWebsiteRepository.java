@@ -14,10 +14,10 @@ import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 
 @Repository
-public class ElasticsearchWebsiteRepository implements WebsiteRepository{
+public class ElasticsearchIWebsiteRepository implements IWebsiteRepository {
 
     private OkHttpClient client;
-    public ElasticsearchWebsiteRepository() {
+    public ElasticsearchIWebsiteRepository() {
         TrustManager[] trustAllCerts = new TrustManager[]{
                 new X509TrustManager() {
                     @Override
